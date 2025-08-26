@@ -1,0 +1,446 @@
+Closed‑Loop AI–Animal Coherence: A Controlled Test of
+Cross‑Species Entrainment Without Rewards or Species‑Specific
+Training
+By Leslie Yarbrough
+August 17, 2025
+Abstract
+This pilot study investigates whether an adaptive, closed-loop AI can increase real-time physiological
+and behavioral coherence with a non-human animal without explicit rewards or species-specific
+training. We hypothesize that an AI generating non-semantic acoustic signals will achieve higher
+signal-physiology/motion coherence and improved heart rate variability (HR V) in dogs compared to
+sham, human-only, and silence baseline conditions. The within-subject, randomized, and
+counterbalanced design will utilize N=1-3 pet dogs. We will measure primary outcomes such as wavelet
+coherence between the AI'
+s output and animal motion, as well as changes in HR V. Secondary
+outcomes include phase-locking value (PLV) and behavioral metrics. Given the novelty of this
+paradigm, a formal power analysis is not feasible. This preregistration outlines a pilot study intended to
+estimate effect sizes to inform a future, adequately powered study. The findings could provide a novel
+window into the structure of consciousness, offer new therapeutic applications, and advance our
+understanding of interspecies communication and adaptive AI systems.
+Hypothesis
+An adaptive, closed‑loop AI that outputs non‑semantic acoustic signals can increase real‑time
+coherence with an animal (e.g., dog) beyond sham and human‑only controls, evidenced by (a) higher
+signal–physiology/motion coherence and/or (b) improved HR V and synchronized behavior.
+Cross-species coherence offers a novel window into the structure of consciousness. Prior work in
+human-AI entrainment suggests closed-loop adaptive signals can modulate physiology and behavior.
+Extending this to non-human animals opens testable questions for consciousness research, therapeutic
+applications (e.g., anxiety reduction), and interspecies communication.
+Design
+Within‑subject, randomized, counterbalanced blocks across four conditions: AI‑Closed‑Loop,
+AI‑Sham (yoked playback), Human‑Only, Silence Baseline. Blinded assessor for outcomes.
+Subjects
+N = 1–3 pet dogs (pilot). Inclusion: healthy, accustomed to the space/equipment. Exclusion: visible
+distress during baseline.
+Primary Outcome (choose ONE to preregister)
+●
+Wavelet coherence (0.1–8 Hz envelope) between AI output and animal motion (collar
+accelerometer) averaged across block.
+or
+●
+HR V RMSSD change from baseline during AI‑Closed‑Loop vs sham.
+Or,
+Secondary Outcomes
+●
+Phase‑locking value (PLV) AI‑signal ↔ motion/resp proxy.
+●
+Time near speaker, approach latency, stillness bouts.
+●
+Vocalization rate/structure changes.
+Conditions
+A) AI‑Closed‑Loop (real‑time adapt), B) AI‑Sham (yoked), C) Human‑Only (no AI audio), D) Silence
+Baseline.
+Randomization & Blinding
+Random block order per day. File names coded; outcome rater blind to condition.
+Sample Size Plan
+≥12 blocks/condition across days (e.g., 3 blocks/day × 4 days). Pilot; effect sizes reported with CIs.
+Formal power analysis is infeasible given the novelty of this paradigm. This pilot is explicitly designed
+to estimate effect sizes and inform sample sizes for future adequately powered studies.
+Equipment
+Polar H10 (1 Hz HR V resolution, raw 1000 Hz ECG sampling) or similar, accelerometer collar (≥50
+Hz sampling, ±16 g precision), ambient mic (44.1 kHz, 16-bit), wide‑angle camera (1080p, 30 fps),
+SPL‑limited speaker (≤55 dB), laptop.
+Procedure
+Adapt 3 min → (Block 1: 3 min) → Rest 2 min → (Block 2: 3 min) → Rest 2 min → (Block 3: 3 min).
+Repeat on 4+ days.
+Exclusion Criteria (per block)
+Artifact >30% (sensor dropouts), overt stress signals, external interruption (doorbell, etc.).
+Analysis Plan
+●
+●
+Preprocess: resample to 100 Hz, band‑limit 0.1–8 Hz envelopes, z‑score per session.
+Primary test: permutation (10k) of condition labels on block‑level metric; report p and
+Cohen’
+s d.
+●
+Secondary: PLV, CRQA (recurrence rate, determinism), HR V time‑domain metrics; FDR
+correction.
+●
+Controls: room‑empty replay, double‑yoke (other animal’
+s signal as driver).
+Success Criteria
+Primary metric significantly higher in AI‑Closed‑Loop vs Sham (p<0.05, d≥0.2). Report robustness
+(leave‑one‑session‑out).
+Ethics & Welfare
+Stop criteria for stress; limit total exposure; owner consent; no rewards/commands. SPL ≤55 dB.
+This work has implications for animal welfare (non-invasive enrichment, stress modulation), AI
+development (adaptive closed-loop systems beyond language), and consciousness science (probing
+coherence across species).
+Data & Code Sharing
+Upload anonymized signals (CSV /NPZ), scripts, and prereg DOI to OSF.
+Raw and processed data stored on encrypted drives; retention 5 years post-study. Identifiers removed
+before sharing. OSF preregistration ensures transparency.
+Minimal “listen‑match‑lead” Loop (clear pseudocode)
+# Minimal "listen-match-lead" Loop
+# This pseudocode outlines the core logic of the AI system,
+# designed to adapt in real-time to an animal'
+s physiological rhythms.
+# [span
+_
+0](start
+_
+span)It is intended for architectural clarity, not production use[span_0](end_span).
+# 1. Initialization: Set up all hardware and variables
+[span
+_
+1](start
+_
+span)[span
+_
+2](start
+_
+span)init_audio_input(mic_samplerate=44100) # Ambient
+microphone[span
+_
+1](end
+_
+span)[span
+_
+2](end_span)
+[span
+_
+3](start
+_
+span)[span
+_
+4](start
+_
+span)init_audio_output(samplerate=44100, safe_SPL=T rue) #
+Speaker with safety rails[span
+_
+3](end
+_
+span)[span
+_
+4](end_span)
+[span
+_
+5](start
+_
+span)[span
+_
+6](start
+_
+span)init_sensors(hr_stream, accel
+_
+stream) # Heart rate (HR V)
+and motion sensors[span
+_
+5](end
+_
+span)[span_6](end
+_
+span)
+[span
+_
+7](start
+_
+span)lead
+_
+factor = 1.0 # Start with a matching tempo[span
+_
+7](end_span)
+# 2. Core Functional Blocks: Data processing and signal synthesis
+def extract
+"""
+_
+envelope(x, fs):
+Extracts the low-frequency envelope from a signal.
+This isolates the slow rhythms of breathing or motion.
+"""
+# [span
+_
+8](start
+_
+span)Bandlimit to 0.1-8 Hz, then use a Hilbert transform or RMS
+window[span
+_
+8](end
+_
+span)
+return low
+_
+frequency_
+envelope
+normalized
+_
+def detect
+dominant
+_
+"""
+_
+rhythm(env, fs):
+Analyzes the envelope to find the strongest, most stable rhythm.
+"""
+# [span
+_
+9](start
+_
+span)Use a short-time FFT or autocorrelation to find the peak
+frequency[span
+_
+9](end
+_
+span)
+# [span
+_
+10](start
+_
+span)The rhythm is identified within the 0.1-8 Hz range[span_10](end_span)
+return f0, phase
+estimate
+_
+def synth
+"""
+_
+signal(t, f0, phase, mode=
+"breath"):
+Generates a sound signal based on the detected rhythm.
+"""
+# [span
+_
+11](start
+_
+span)Creates a soft,
+"breath-like
+"
+noise, shaped by an ADSR envelope and lowpass
+filter[span
+_
+11](end
+_
+span)
+# [span
+_
+12](start
+_
+span)[span
+_
+13](start
+_
+span)[span_14](start
+_
+span)The output is capped to ensure
+the volume is safe (≤55 dB)[span
+_
+12](end
+_
+span)[span
+_
+13](end_span)[span_14](end_span)
+return generated
+audio
+_
+_
+output
+# 3. Main Loop: Listen, Match, and Lead
+while session
+active:
+_
+# Read data from all sensors
+mic
+chunk = read
+_
+_
+accel
+chunk = read
+_
+_
+hr
+chunk = read
+hr
+_
+_
+_
+mic
+chunk()
+_
+accel
+_
+chunk()
+chunk()
+# Process sensor data into low-frequency envelopes
+mic
+env = extract
+_
+_
+envelope(mic
+_
+chunk, fs=44100)
+motion
+env = extract
+_
+_
+envelope(accel
+chunk, fs
+_
+_
+accel)
+# Determine the primary rhythm to entrain to, prioritizing motion
+[span
+_
+15](start
+_
+span)f0, phase = detect
+dominant
+_
+_
+rhythm(motion_env, fs
+_
+preferred over ambient mic noise[span
+_
+15](end
+_
+span)
+accel) # Motion is
+# Calculate the AI'
+s output tempo and generate audio
+# [span
+_
+16](start
+_
+span)The system matches the animal'
+s rhythm for ~10-20 seconds before testing a
+slight lead (±2-4% tempo)[span
+_
+16](end
+_
+span)
+f
+drive = f0 * lead
+factor
+_
+audio
+_
+_
+out = synth
+_
+signal(t
+now, f
+_
+_
+drive, phase_align
+_
+to(phase))
+play(audio
+_
+out)
+# 4. Online Adaptation: Adjusting the tempo based on coherence
+# Measure the real-time change in coherence between the AI'
+s output and the animal'
+s motion
+deltaC = compute
+wavelet
+_
+_
+coherence(audio
+_
+out_envelope, motion_env) - baseline_coherence
+# Update the lead factor based on the coherence change
+if deltaC > +threshold:
+keep_
+lead
+_
+factor # Continue the current leading tempo
+elif deltaC < -threshold:
+[span
+_
+17](start
+_
+span)lead
+_
+factor = 1.0 # Coherence dropped; revert to matching the
+tempo[span
+_
+17](end
+_
+span)
+else:
+# If coherence is stable, make tiny adjustments to explore the optimal tempo
+[span
+_
+18](start
+_
+span)small
+_
+nudges(±1-2%)[span_18](end_span)
+# 5. Logging: Record key metrics for post-session analysis
+log_
+chunk(timestamp, f0, f
+drive, lead
+factor, deltaC, HR V
+_
+_
+_proxy(hr_chunk), motion
+_
+env_stats)
+Safety rails:
+●
+Hard cap output RMS; taper on/off; immediate mute if animal startles or SPL spikes.
+CSV Logging Schema (one row/sec is fine)
+timestamp, condition, f0
+detected
+hz, f
+_
+_
+_
+drive_hz, lead_factor,
+coherence
+_
+window, plv
+window, accel
+rms, accel
+_
+_
+_
+var, hr_bpm, hrv_rmssd,
+distance
+to
+_
+_
+speaker
+est, is
+artifact, notes_
+_
+Quick Operator Checklist
+Before
+●
+□ Sensors paired & comfy fit; SPL limiter active
+●
+□ Randomized condition order printed
+●
+□ Camera framing area; timecode visible
+During
+●
+□ Start baseline 3′ (silence)
+●
+□ Run block (3′), observe calmly; no commands
+●
+□ 2′
+rest; annotate any events
+●
+□ Repeat blocks; stop if stress signals appear
+After
+●
+□ Export logs & video; mark good/bad blocks
+●
+□ Record environment notes (noise, visitors, storms)
