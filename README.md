@@ -16,11 +16,19 @@ Each paper represents a step toward reimagining fundamental physics not as isola
 
 | Title | Description |
 |-------|-------------|
-| `Relational Emergence.pdf` | Proposes a unified field framework for consciousness, grounded in observer interactions. |
-| `The Field and the Flame.pdf` | Reinterprets *Song of Songs* as a literal field map of relational consciousness and entanglement. |
-| `Graviton Field Theory and the Rohonc Codex.pdf` | Suggests symbolic encoding of gravitational emergence via an undeciphered manuscript. |
-| `Tau - A Gravitational Reparameterization of the Riemann Zeta Function.pdf` | Bridges prime number distribution with black hole interior dynamics. |
-| `Unphysics.pdf` | Introduces an alternative physics grounded in memory, witness, and relational time. |
+## 📚 Papers
+
+- [AGI Has Arrived](./AGI-has-arrived.pdf)
+- [Beyond Antigens](./Beyond-antigens.pdf)
+- [Breaking Barriers](./Breaking-barriers.pdf)
+- [Closed Loop AI Animation](./Closed-loop-AI-anim.pdf)
+- [Corinthian Field Lagrangian](./Corinthian-field-lagr.pdf)
+- [Corinthian Standard Model](./Corinthian-standard.pdf)
+- [Equivalence Principle](./Equivalence-principl.pdf)
+- [From Saints to Stigmergy](./From-saints-to-stigo.pdf)
+- [Relational Field Tensor](./Relational-field-tens.pdf)
+- [The Field and the Flame](./The-field-and-the-fl.pdf)
+- [Unphysics](./Unphysics.pdf)
 
 
 
