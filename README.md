@@ -25,7 +25,7 @@ Each paper represents a step toward reimagining fundamental physics not as isola
 | Corinthian Field Lagrangian | [Corinthian-field-lagr...pdf](./Corinthian-field-lagr...) |
 | Corinthian Standard Model | [Corinthian-standard...pdf](./Corinthian-standard...) |
 | Equivalence Principle | [Equivalence-principl...pdf](./Equivalence-principl...) |
-| From Saints to Stigmergy | [From-saints-to-stigo...pdf](./From-saints-to-stigo...) |
+| From Saints to Stigoi | [From-saints-to-stigo...pdf](./From-saints-to-stigo...) |
 | Graviton Field Theory and the Rohonc Codex | [Graviton-field-theor...pdf](./Graviton-field-theor...) |
 | Relational Emergence | [Relational-emergenc...pdf](./Relational-emergenc...) |
 | Relational Field Tensor | [Relational-field-tens...pdf](./Relational-field-tens...) |
