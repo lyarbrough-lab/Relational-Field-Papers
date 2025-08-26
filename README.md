@@ -12,10 +12,7 @@ These works draw from and contribute to emerging frameworks in:
 
 Each paper represents a step toward reimagining fundamental physics not as isolated entities, but as interactive events arising within a shared relational field.
 
-## 📄 Papers
 
-| Title | Description |
-|-------|-------------|
 ## 📚 Papers
 
 - [AGI Has Arrived](./AGI-has-arrived.pdf)
