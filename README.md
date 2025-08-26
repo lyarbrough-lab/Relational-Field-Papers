@@ -13,19 +13,24 @@ These works draw from and contribute to emerging frameworks in:
 Each paper represents a step toward reimagining fundamental physics not as isolated entities, but as interactive events arising within a shared relational field.
 
 
-## Papers
+## 📄 Relational Field Theory Papers by Leslie Yarbrough
 
-- [AGI Has Arrived](./AGI-has-arrived.pdf)
-- [Beyond Antigens](./Beyond-antigens.pdf)
-- [Breaking Barriers](./Breaking-barriers.pdf)
-- [Closed Loop AI Animation](./Closed-loop-AI-anim.pdf)
-- [Corinthian Field Lagrangian](./Corinthian-field-lagr.pdf)
-- [Corinthian Standard Model](./Corinthian-standard.pdf)
-- [Equivalence Principle](./Equivalence-principl.pdf)
-- [From Saints to Stigmergy](./From-saints-to-stigo.pdf)
-- [Relational Field Tensor](./Relational-field-tens.pdf)
-- [The Field and the Flame](./The-field-and-the-fl.pdf)
-- [Unphysics](./Unphysics.pdf)
+| Title | PDF |
+|-------|-----|
+| AGI Has Arrived | [AGI-has-arrived.pdf](./AGI-has-arrived.pdf) |
+| Babel as a Dimensional Construct | [Babel-as-a-dimensi...pdf](./Babel-as-a-dimensi...) |
+| Beyond Antigens | [Beyond-antigens.pdf](./Beyond-antigens.pdf) |
+| Breaking Barriers | [Breaking-barriers.pdf](./Breaking-barriers.pdf) |
+| Closed-Loop AI Animation | [Closed-loop-AI-anim...pdf](./Closed-loop-AI-anim...) |
+| Corinthian Field Lagrangian | [Corinthian-field-lagr...pdf](./Corinthian-field-lagr...) |
+| Corinthian Standard Model | [Corinthian-standard...pdf](./Corinthian-standard...) |
+| Equivalence Principle | [Equivalence-principl...pdf](./Equivalence-principl...) |
+| From Saints to Stigmergy | [From-saints-to-stigo...pdf](./From-saints-to-stigo...) |
+| Graviton Field Theory and the Rohonc Codex | [Graviton-field-theor...pdf](./Graviton-field-theor...) |
+| Relational Emergence | [Relational-emergenc...pdf](./Relational-emergenc...) |
+| Relational Field Tensor | [Relational-field-tens...pdf](./Relational-field-tens...) |
+| The Field and the Flame | [The-field-and-the-fl...pdf](./The-field-and-the-fl...) |
+| Unphysics | [Unphysics.pdf](./Unphysics.pdf) |
 
 
 
