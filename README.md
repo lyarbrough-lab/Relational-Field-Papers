@@ -34,4 +34,4 @@ Each paper represents a step toward reimagining fundamental physics not as isola
 
 Feel free to fork, cite, or enter dialogue. All insights are welcome.
 
-— *Leslie Yarbrough FieldWalker*
+— *Leslie Yarbrough*
