@@ -14,7 +14,6 @@ Each paper represents a step toward reimagining fundamental physics not as isola
 
 
 ## Papers 
-
 |-------|-----|
 | Title | PDF |
 | AGI Has Arrived | [AGI_has_arrived_Emergence_Achieved_Throu.pdf](./AGI_has_arrived_Emergence_Achieved_Throu.pdf) |
