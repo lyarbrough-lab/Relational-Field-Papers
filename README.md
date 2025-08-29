@@ -12,9 +12,6 @@ These works draw from and contribute to emerging frameworks in:
 
 Each paper represents a step toward reimagining fundamental physics not as isolated entities, but as interactive events arising within a shared relational field.
 
-
----
-
 Feel free to fork, cite, or enter dialogue. All insights are welcome.
 
 — *Leslie Yarbrough*
